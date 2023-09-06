@@ -1,0 +1,7 @@
+{
+  "name": "app3dCube",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

@@ -1,0 +1,195 @@
+
+.body{
+  height: 100vh;
+  color: #333;
+  font-family: sans-serif;
+  background: url('./../../assets/img/stars.gif');
+  background-size: cover;
+  background-color: #000;
+  background-position-y: -100px;
+
+}
+
+.center {
+  
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(1.5px) brightness(80%);
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1{
+  color: #fff;
+  text-align: center;
+  margin: 0 1em;
+  font-family: monospace;
+}
+
+span{
+  color: rgb(0, 175, 0);
+  text-shadow: 0px 0px 2px rgb(89, 255, 67);
+  background-color: rgba(0, 0, 0, 0.473);
+  backdrop-filter: blur(5px);
+}
+
+.container{
+  width: 100%;
+  height: 50vh;
+  perspective: 600px;
+  margin: 10% auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+
+.cubo{
+  position: relative;
+  width: 150px;
+  height: 150px;
+  transform-style: preserve-3d;
+  transform: rotateY(35deg) rotateX(-38deg);
+  transition: .5s  linear;
+
+  
+}
+
+
+.cubo div.a{
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: url('./../../assets/img/cube.png');
+  filter: opacity(.7);
+  border: 2px solid #1c86c4;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px #1e60b6,
+  0px 0px 10px #5ca3ff,
+  0px 0px 10px #1e60b6,
+  0px 0px 10px #5ca3ff;
+}
+
+.cubo div.a:nth-child(1){
+  transform: translateZ(75px);
+  background-color: rgba(220, 20, 60, 0.514);
+}
+
+.cubo div.a:nth-child(2){
+  transform: rotateX(180deg) translateZ(75px);
+  background-color: rgba(105, 90, 205, 0.514);
+}
+
+.cubo div.a:nth-child(3){
+  transform: rotateY(90deg) translateZ(75px);
+  background-color: rgba(46, 139, 86, 0.514);
+}
+
+.cubo div.a:nth-child(4){
+  transform: rotateY(-90deg) translateZ(75px);
+  background-color: rgba(250, 128, 114, 0.514);
+}
+
+.cubo div.a:nth-child(5){
+  transform: rotateX(90deg) translateZ(75px);
+  background-color: rgba(0, 255, 128, 0.514);
+}
+
+.cubo div.a:nth-child(6){
+  transform: rotateX(-90deg) translateZ(75px);
+  background-color: rgba(102, 51, 153, 0.514);
+}
+
+.cubo2{
+  position: relative;
+  width: 150px;
+  height: 150px;
+  transform-style: preserve-3d;
+  transition: .5s  linear;
+  left: 35px;
+  top: 35px
+  
+}
+
+
+.cubo2 div{
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: #fff;
+  filter: blur(0px);
+  box-shadow: 0px 0px 8px #fff,
+  0px 0px 8px #fff,
+  0px 0px 8px #fff,
+  0px 0px 8px #fff,
+  0px 0px 8px #fff,
+  0px 0px 8px #fff,
+  0px 0px 8px #fff,
+  0px 0px 8px #fff,
+  0px 0px 8px #fff,
+  0px 0px 8px #fff,
+  0px 0px 8px #fff,
+  0px 0px 4px #fff,
+  0px 0px 4px #fff;
+  
+  
+}
+
+.cubo2 div:nth-child(1){
+  transform: translateZ(40px);
+  
+}
+
+.cubo2 div:nth-child(2){
+  transform: rotateX(180deg) translateZ(40px);
+  
+}
+
+.cubo2 div:nth-child(3){
+  transform: rotateY(90deg) translateZ(40px);
+  
+}
+
+.cubo2 div:nth-child(4){
+  transform: rotateY(-90deg) translateZ(40px);
+  
+}
+
+.cubo2 div:nth-child(5){
+  transform: rotateX(90deg) translateZ(40px);
+  
+}
+
+.cubo2 div:nth-child(6){
+  transform: rotateX(-90deg) translateZ(40px);
+  
+}
+
+@media (max-width: 600px){
+
+  .body{
+      background-position: center -10px;
+      background-size: 160%;
+
+      
+  }
+
+  .container{
+   
+      margin: 20% auto;
+      
+      
+  }
+
+  
+  h1{
+    font-size: 1.5em
+  }
+
+}
